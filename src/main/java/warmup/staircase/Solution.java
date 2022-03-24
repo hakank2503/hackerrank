@@ -1,0 +1,20 @@
+package warmup.staircase;
+
+import java.util.Scanner;
+
+/**
+ * Created by hakank on 21/04/2016.
+ */
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num  = Integer.parseInt(sc.nextLine());
+        for(int j=0; j<num; j++){
+            for(int i=1; i<= num; i++){
+                System.out.print(i < num-j ? " " : "#");
+            }
+            System.out.println("");
+        }
+    }
+
+}
